@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Compras</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Registro de Compras</h1>
+  </header>
+
+  <!-- Corpo -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Adicionar Compra</h5>
+            <form id="purchase-form">
+              <div class="form-group">
+                <label for="client-name">Nome do Cliente:</label>
+                <input type="text" class="form-control" id="client-name" required>
+              </div>
+              <div class="form-group">
+                <label for="purchase-date">Data da Compra:</label>
+                <input type="date" class="form-control" id="purchase-date" required>
+              </div>
+              <div class="form-group">
+                <label for="purchase-value">Valor da Compra:</label>
+                <input type="number" class="form-control" id="purchase-value" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Adicionar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-8 offset-md-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Compras Registradas</h5>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Nome do Cliente</th>
+                  <th>Data da Compra</th>
+                  <th>Valor da Compra</th>
+                </tr>
+              </thead>
+              <tbody id="purchase-list"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Registro de Compras. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
